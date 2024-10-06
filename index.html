@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Using</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+    <div class="header">
+        <h2>Simple Calculator</h2>
+    </div>
+    <div class="calculator">
+        <div class="screen">
+            <input type="text" readonly>
+        </div>
+        <div class="action">
+            <button onclick="sinclick()" id="sin">Sin</button>
+            <button onclick="cosclick()" id="cos">Cos</button>
+            <button onclick="tanclick()" id="tan">Tan</button>
+            <button onclick="delclick()" id="del">del</button>
+            <button data-value="9">9</button>
+            <button data-value="8">8</button>
+            <button data-value="7">7</button>
+            <button data-value="+" id="plus">+</button>
+            <button data-value="6">6</button>
+            <button data-value="5">5</button>
+            <button data-value="4">4</button>
+            <button data-value="-" id="minus">-</button>
+            <button data-value="3">3</button>
+            <button data-value="2">2</button>
+            <button data-value="1">1</button>
+            <button data-value="*" id="mul">*</button>
+            <button data-value="00">00</button>
+            <button data-value="0">0</button>
+            <button data-value="." id="dot">.</button>
+            <button data-value="/" id="div">/</button>
+            <button onclick="clearScreen()" id="ac">AC</button>
+            <button onclick="cal()" id="equal">=</button>
+        </div>
+    </div>
+    <div>
+        <button id="btnHome" onclick="home()">Home</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

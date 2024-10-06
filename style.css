@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Oswald;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header h2{
+    font-size: 40px;
+    margin-top: -20%;
+}
+.calculator{
+    width: 300px;
+    height: 350px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px black;
+    margin-top: 2%;
+}
+.calculator .screen{
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.screen input{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    outline: 0;
+    background: cyan;
+    color: black;
+    text-align: end;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+}
+.calculator .action{
+    width: 100%;
+    height: calc(350px - 70px);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 8px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 10px 8px;
+    flex-wrap: wrap;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.action button{
+    width: 63px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+#sin, #cos, #tan{
+    background: rgba(201, 197, 197, 0.678);
+    box-shadow: 0px 0px 8px black;
+    transition: all ease-in-out 0.4s;
+}
+#sin:hover, #cos:hover, #tan:hover{    
+    box-shadow: 0px 0px 8px rgba(225, 225, 225, 0.7);
+}
+
+#del{
+    background: red;
+    box-shadow: 0px 0px 8px black;
+    transition: all ease-in-out 0.4s;
+}
+#del:hover{    
+    box-shadow: 0px 0px 8px rgba(225, 225, 225, 0.7);
+}
+#ac{
+    width: 73%;
+    height: 35px;
+    background: red;
+    transition: all ease-in-out 0.4s;
+}
+#ac:hover{
+    box-shadow: 0px 0px 8px rgba(225, 225, 225, 0.7);
+}
+#plus, #minus, #mul, #div, #equal{
+    background: orange;
+}
+#plus:hover, #minus:hover, #mul:hover, #div:hover, #equal:hover{
+    box-shadow: 0px 0px 8px rgba(225, 225, 225, 0.7);
+}
+
+#btnHome{
+    margin-top: 15px;
+    width: 150px;
+    height: 30px;
+    border-radius:15px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    background: rgba(148, 245, 245, 0.644);
+    transition: all ease-in-out 0.4s;
+}
+#btnHome:hover{
+    background: cyan;
+}

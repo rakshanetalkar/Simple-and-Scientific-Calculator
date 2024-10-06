@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sciCal.css">
+</head>
+<body>
+    <div class="header">
+        <h2>Scientific Calculator</h2>
+    </div>
+    <div class="container">
+        <div class="screen">
+            <input type="text" readonly>
+        </div>
+        <div class="action">
+            <button onclick="powTwo()">x<sup>2</sup></button>
+            <button onclick="pi()">Π</button>
+            <button onclick="e()">e</button>
+            <button onclick="allClear()" id="ac">AC</button>
+            <button onclick="del()">⌫</button>
+
+            <button onclick="sqrt()">√</button>
+            <button data-value="(">(</button>
+            <button data-value=")">)</button>
+            <button onclick="fact()">n!</button>
+            <button data-value="/" id="div">÷</button>
+
+            <button data-value="%">%</button>
+            <button data-value="7" class="sev">7</button>
+            <button data-value="8" class="eig">8</button>
+            <button data-value="9" class="nin">9</button>
+            <button data-value="*" id="mul">x</button>
+
+            <button onclick="exp()" id="exp">exp</button>
+            <button data-value="4" class="for">4</button>
+            <button data-value="5" class="fiv">5</button>
+            <button data-value="6" class="six">6</button>
+            <button data-value="-" id="minus">-</button>
+
+            <button onclick="logClick()">log</button>
+            <button data-value="1" class="one">1</button>
+            <button data-value="2" class="two">2</button>
+            <button data-value="3" class="thr">3</button>
+            <button data-value="+" id="plus">+</button>
+
+            <button onclick="rnd()">Rnd</button>
+            <button data-value="00" class="zet">00</button>
+            <button data-value="0" class="zeo">0</button>
+            <button data-value="." class="dot">.</button>
+            <button onclick="cal()" id="equal">=</button>
+        </div>
+    </div>
+    <div>
+        <button id="btnHome" onclick="home()">Home</button>
+    </div>
+    <script src="sciCal.js"></script>
+</body>
+</html>
