@@ -16,7 +16,7 @@ This project is a web-based calculator that performs both basic arithmetic opera
 
 # Installation
 - Clone the repository:
-    git clone https://github.com/your-username/simple-scientific-calculator.git
+    git clone https://github.com/rakshanetalkar/Simple-and-Scientific-Calculator.git
 - cd simple-scientific-calculator
 - npm install
 - npm start
